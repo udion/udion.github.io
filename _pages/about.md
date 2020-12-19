@@ -18,7 +18,7 @@ news: true
 social: true
 ---
 ## Who am I?
-Hey, there! Uddeshya here. 
+Heythere! Uddeshya here. 
 
 I am a first-year Ph.D. student at [**T&uuml;bingen**](https://imprs.is.mpg.de/), where I am supervised by [**Prof. Zeynep Akata**](https://eml-unitue.de/people/zeynep-akata).
 I am fascinated by interdisciplinary R&D happening at the intersection of 
