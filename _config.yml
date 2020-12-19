@@ -5,7 +5,7 @@
 title: Uddeshya Upadhyay
 email: uddeshya.upa@gmail.com
 description: > # this means to ignore newlines until "url:"
-  Homepage for Uddeshya Upadhyay. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Homepage for Uddeshya Upadhyay.
 footer_text: > 
 #  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 #  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -81,7 +81,7 @@ collections:
     output: true
     permalink: /projects/:path/
 
-news_limit: 6
+news_limit: 1
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
