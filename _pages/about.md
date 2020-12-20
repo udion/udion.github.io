@@ -41,4 +41,4 @@ BTW, [**here's**](https://www.youtube.com/watch?v=5qap5aO4i9A) a cool lofi track
 I believe something similar can be said for Researchers vs. Engineers.
 <!-- -->
 
-Oh, and inspired by Tim Ferriss and David Goggins, I maintain a log of experiments that I routinely run on myself @ ["the Human Guinea Pig (HGP) logs"](/hgp_logs/).
+Oh, and inspired by Tim Ferriss and David Goggins, I maintain logs of experiments that I routinely run on myself @ ["the Human Guinea Pig (HGP) logs"](/hgp_logs/).
