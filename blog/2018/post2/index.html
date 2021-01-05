@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Uddeshya Upadhyay | Uddeshya Upadhyay</title>
+<title>Uddeshya Upadhyay | How to "remote deep learning"?</title>
 <meta name="description" content="Homepage for Uddeshya Upadhyay.
 ">
 
@@ -23,12 +22,68 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/blog/2018/post2/">
 
 <!-- Open Graph -->
 
 
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    
+    <style type="text/css">
+      .fake-img {
+  background: #bbb;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+} .fake-img p {
+  font-family: monospace;
+  color: white;
+  text-align: left;
+  margin: 12px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+    </style>
+    
   </head>
+
+  <d-front-matter>
+    <script type="text/json">{
+      "title": "How to "remote deep learning"?",
+      "description": "",
+      "published": "2018-08-16 00:00:00 +0200",
+      "authors": [
+        
+        {
+          "author": "Uddeshya Upadhyay",
+          "authorURL": "https://udion.github.io/",
+          "affiliations": [
+            {
+              "name": "IIT-Bombay",
+              "url": ""
+            }
+          ]
+        }
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+  </d-front-matter>
 
   <body class="fixed-top-nav ">
 
@@ -139,47 +194,87 @@
 
     <!-- Content -->
 
-    <div class="container mt-5">
-      <div class="post">
+    <div class="post distill">
 
-  <div class="header-bar">
-    <h1>Posts</h1>
-    <h2>random musings</h2>
-  </div>
-
-
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/post3/">Spinal Stenosis</a></h3>
-        <p class="post-meta">June 27, 2019</p>
+      <d-title>
+        <h1>How to "remote deep learning"?</h1>
         <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/post1/">Uncertainty in DNNs</a></h3>
-        <p class="post-meta">September 5, 2018</p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/post2/">How to "remote deep learning"?</a></h3>
-        <p class="post-meta">August 16, 2018</p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/post4/">Genome Sequencing</a></h3>
-        <p class="post-meta">July 19, 2018</p>
-        <p></p>
-      </li>
-    
-  </ul>
+      </d-title>
 
-  
+      <d-byline></d-byline>
 
+      <d-article>
+        <h1 id="pre-reqs">Pre-reqs</h1>
+<p>I am assuming that remote machine and local machine (both running linux aka ubuntu :P) have the necessary libs/packages installed and package versions are consistent across the machine, not having this consistency might lead to some minor blocks which may require some tinkering.</p>
 
-</div>
+<ul>
+  <li>On local machine : <code class="language-plaintext highlighter-rouge">VSCode + rmate extention</code></li>
+  <li>On remote machine : <code class="language-plaintext highlighter-rouge">rmate + ipython (with jupyter)</code></li>
+</ul>
+
+<h1 id="on-local-machine-">On local machine …</h1>
+<p>On local machine setup VScode with rmate extention. It’s better to change the remote port to something other than the default value say <code class="language-plaintext highlighter-rouge">32000</code> by changing the user-settings in vscode, something like <code class="language-plaintext highlighter-rouge">"remote.port": 32000</code></p>
+
+<h1 id="on-remote-machine-">On remote machine …</h1>
+<ul>
+  <li>
+    <p>Get <code class="language-plaintext highlighter-rouge">rmate</code> using</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo wget -O /usr/local/bin/rmate https://raw.github.com/aurora/rmate/master/rmate
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Edit <code class="language-plaintext highlighter-rouge">/usr/local/bin/rmate</code> to change the default port number to the value set on VScode on local machine i.e <code class="language-plaintext highlighter-rouge">32000</code></p>
+  </li>
+  <li>
+    <p>do <code class="language-plaintext highlighter-rouge">sudo chmod a+x /usr/local/bin/rmate</code></p>
+  </li>
+</ul>
+
+<p>Now we can edit the files on remote machine using VScode on local machine</p>
+
+<ul>
+  <li>
+    <p>Start the remote server in VScode on local machine using</p>
+
+    <p><code class="language-plaintext highlighter-rouge">Ctrl + Shift + P</code> and  <code class="language-plaintext highlighter-rouge">&gt;Remote: start server</code></p>
+  </li>
+  <li>
+    <p>Connect to remote machine using</p>
+
+    <p><code class="language-plaintext highlighter-rouge">ssh -R 32000:localhost:32000 REMOTE_MACHINE_IP_ADDRESS</code></p>
+  </li>
+  <li>
+    <p>Open the file on the remote machine using rmate, i.e <code class="language-plaintext highlighter-rouge">rmate test.txt</code> . This should open the file in VScode on local machine</p>
+  </li>
+</ul>
+
+<h2 id="to-open-remote-jupyter-server-on-local-machine">To open remote jupyter server on local machine</h2>
+<ul>
+  <li>
+    <p>On remote machine start ipython server using</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ ipython notebook --no-browser --port=8889
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Connect to remote server using</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ ssh -N -f -L localhost:8888:localhost:8889 REMOTE_MACHINE_IP_ADDRESS
+</code></pre></div>    </div>
+    <p>here 8888 is port on local machine and 8889 is port on remote machine</p>
+  </li>
+  <li>
+    <p>On local machine open the browser and visit <code class="language-plaintext highlighter-rouge">localhost:8888/</code></p>
+  </li>
+</ul>
+
+      </d-article>
+
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
 
     </div>
 
@@ -243,5 +338,8 @@
 
 
 
+
+  <d-bibliography src="/assets/bibliography/">
+  </d-bibliography>
 
 </html>

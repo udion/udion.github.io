@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Uddeshya Upadhyay | Uddeshya Upadhyay</title>
+<title>Uddeshya Upadhyay</title>
 <meta name="description" content="Homepage for Uddeshya Upadhyay.
 ">
 
@@ -23,7 +23,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/temps/teaching/">
 
 <!-- Open Graph -->
 
@@ -61,7 +61,7 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               Blog
               
@@ -142,42 +142,53 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Posts</h1>
-    <h2>random musings</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+    <p class="post-description"></p>
+  </header>
 
+  <article>
+    <!-- ---
+layout: page
+permalink: /teaching/
+title: teaching
+description: Materials for courses you taught. Replace this text with your description.
+nav: true
+---
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/post3/">Spinal Stenosis</a></h3>
-        <p class="post-meta">June 27, 2019</p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/post1/">Uncertainty in DNNs</a></h3>
-        <p class="post-meta">September 5, 2018</p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/post2/">How to "remote deep learning"?</a></h3>
-        <p class="post-meta">August 16, 2018</p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/post4/">Genome Sequencing</a></h3>
-        <p class="post-meta">July 19, 2018</p>
-        <p></p>
-      </li>
-    
-  </ul>
+For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
 
-  
+Organize your courses by years, topics, or universities, however you like! -->
 
+<p>@article{uu_quest,
+  abbr={ICML-UDL 2020},
+  title={QUEST for MEDISYN: Quasi-norm based Uncertainty ESTimation for MEDical Image SYNthesis},
+  author={Uddeshya, Upadhyay* and Viswanath P., Sudarshan* and Suyash, Awate},
+  abstract={Uncertainty quantification in medical imaging is
+  critical for clinical translation of deep learning-
+  based methods. Modality propagation within the
+  context of medical imaging is a problem of inter-
+  est, both across as well as within modalities. For
+  magnetic resonance imaging (MRI), often, multi-
+  contrast MRI images are acquired for improved
+  diagnosis and prognosis. In this work, we focus
+  on the synthesis of T2w MRI images from T1w
+  MRI images. Prior works used generative adver-
+  sarial networks (GANs), but lack (i) uncertainty
+  quantification, (ii) evaluating the robustness of
+  the network to out-of-distribution data (common
+  in medical imaging). We propose a robust GAN
+  framework that incorporates uncertainty quantifi-
+  cation using quasi-norm based penalties, and also
+  show the efficacy of the method on unseen sys-
+  temic and physiological perturbations on a large
+  publicly available multimodal MRI dataset.},
+  year={2020},
+  html={http://www.gatsby.ucl.ac.uk/~balaji/udl2020/accepted-papers/UDL2020-paper-061.pdf},
+  pdf={papers/quest.pdf},
+}</p>
+
+  </article>
 
 </div>
 
