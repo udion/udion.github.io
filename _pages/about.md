@@ -29,3 +29,5 @@ I was an undergrad at **Computer Science and Engineering@[IIT-Bombay](https://ww
 
 **[Here's](https://www.youtube.com/watch?v=obCjODeoLVw)** a video of Prof. R. Feynman talking about Mathematicians and Physicists.
 I believe a similar link exists between Researchers and Engineers.
+
+<p><small>(Best viewed on large-screen devices)</small></p>
