@@ -1,25 +1,31 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Motto - to build cool stuff
 
 profile:
   align: right
   image: prof_pic.jpg
   image_cicular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+   <strong><small> T&uuml;bingen &#8644; Mumbai </small></strong>
+   <p><small>uddeshya.upa@gmail.com</small></p>
+   <small><p><a href="https://scholar.google.com/citations?user=Zgk0Z6kAAAAJ&hl=en">Google Scholar</a></p>
+   <p><a href="https://twitter.com/uddupa">Twitter</a></p>
+   <p><a href="https://github.com/udion/">Github</a></p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Ph.D. candidate at [**IMPRS-IS Program, T&uuml;bingen**](https://imprs.is.mpg.de/), where I am part of [**EML**](https://eml-unitue.de/) and [**MIDAS**](http://midaslab.org/) group, and I work closely with [**Prof. Zeynep Akata**](https://eml-unitue.de/people/zeynep-akata) and [**Prof. Sergios Gatidis**](https://www.medizin.uni-tuebingen.de/de/das-klinikum/mitarbeiter/profil/1479).
+I am fascinated by interdisciplinary R&D happening at the intersection of 
+Computer Vision, Machine Learning, Biomedical and Healthcare Informatics.
+These days I am exploring Bayesian Deep Learning, Uncertainty Estimation, Generative models, Explainable AI (XAI).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I was an undergrad at **Computer Science and Engineering@[IIT-Bombay](https://www.iitb.ac.in/)**. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+**[Here's](https://www.youtube.com/watch?v=obCjODeoLVw)** a video of Prof. R. Feynman talking about Mathematicians and Physicists.
+I believe a similar link exists between Researchers and Engineers.

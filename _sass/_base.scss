@@ -298,15 +298,19 @@ footer.sticky-bottom {
   margin-bottom: 40px;
   
   .card {
-    background-color: var(--global-card-bg-color);
+    // background-color: var(--global-card-bg-color);
+    background-color: black;
     border: 1px solid var(--global-divider-color);
     
     .list-group-item {
-      background-color: inherit;
+      // background-color: inherit;
+      background-color: black;
 
       .badge {
-        color: var(--global-card-bg-color) !important;
-        background-color: var(--global-theme-color) !important;
+        // color: var(--global-card-bg-color) !important;
+        color: black !important;
+        // background-color: var(--global-theme-color) !important;
+        background-color: black !important;
       }
     }
   }
@@ -489,11 +493,13 @@ footer.sticky-bottom {
         margin-bottom: 0.5rem;
         abbr {
           display: inline-block;
-          background-color: var(--global-theme-color);
+          // background-color: var(--global-theme-color);
+          background-color: black;
           padding-left: 1rem;
           padding-right: 1rem;
           a {
-            color: white;
+            // color: rgb(255, 255, 255);
+            color: black;
             &:hover {
               text-decoration: none;
             }
