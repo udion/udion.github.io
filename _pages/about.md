@@ -20,14 +20,13 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Ph.D. candidate at [**IMPRS-IS Program, T&uuml;bingen**](https://imprs.is.mpg.de/), where I am part of [**EML**](https://eml-unitue.de/) and [**MIDAS**](http://midaslab.org/) group, and I work closely with [**Prof. Zeynep Akata**](https://eml-unitue.de/people/zeynep-akata) and [**Prof. Sergios Gatidis**](https://www.medizin.uni-tuebingen.de/de/das-klinikum/mitarbeiter/profil/1479).
-I am fascinated by interdisciplinary R&D happening at the intersection of 
-Computer Vision, Machine Learning, Biomedical and Healthcare Informatics.
-These days I am exploring Bayesian Deep Learning, Uncertainty Estimation, Generative models, Explainable AI (XAI).
+***Note: This webpage is no longer maintained. You can find more about me on the new website here: [https://udion.xyz/](https://udion.xyz/)***
 
-I was an undergrad at **Computer Science and Engineering@[IIT-Bombay](https://www.iitb.ac.in/)**. 
+I completed my doctoral studies at **International Max Planck Research School for Intelligent Systems @ T&uuml;bingen, Germany [(IMPRS-IS)](https://imprs.is.mpg.de/)**,
+Even earlier, I was an undergrad at **Computer Science and Engineering@[IIT-Bombay](https://www.iitb.ac.in/)**. 
 
-**[Here's](https://www.youtube.com/watch?v=obCjODeoLVw)** a video of Prof. R. Feynman talking about Mathematicians and Physicists.
-I believe a similar link exists between Researchers and Engineers.
+I am fascinated by interdisciplinary R&D happening at the intersection of Computer Vision, Machine Learning, Biomedical and Healthcare Informatics.
+
+To know more about me please checkout: **[https://udion.xyz/](https://udion.xyz/)** (as this webpage is inactive).
 
 <p><small>(Best viewed on large-screen devices)</small></p>
